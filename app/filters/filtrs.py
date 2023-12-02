@@ -4,7 +4,6 @@ from aiogram.types import Message
 from app.commands import remove_admins_commands
 from app.database.models.user import User
 from app.logic.enums import UserStatusEnum
-from app.utils.logging import logger
 
 
 class StatusFilter(Filter):
@@ -16,7 +15,6 @@ class StatusFilter(Filter):
 
     async def __call__(self, message: Message, **data: dict) -> bool:
         user: User = data["user"]
-        logger.info(f"{message.text=} | {user=}")
 
         _is = user.status in self.statuses
         if not _is:

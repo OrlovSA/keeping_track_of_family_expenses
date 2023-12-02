@@ -5,10 +5,7 @@ from loader import bot
 
 
 def get_default_commands():
-    commands = [
-        BotCommand(command="/summ", description=("Узнать остаток")),
-        BotCommand(command="/expenses", description=("все затраты за текущий месяц")),
-    ]
+    commands = [BotCommand(command="/start", description=("Узнать остаток"))]
 
     return commands
 

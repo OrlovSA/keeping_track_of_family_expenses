@@ -1,5 +1,5 @@
 # App
-aiogram @ https://github.com/aiogram/aiogram/archive/refs/heads/dev-3.x.zip
+aiogram==3.2.0
 Babel==2.12.1
 environs==9.5.0
 
